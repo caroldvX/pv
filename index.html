@@ -12,15 +12,36 @@
         body {
             font-family: 'Montserrat', sans-serif;
         }
-        .b {
+        .message {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 16px;
             filter: blur(2.3px);
             transition: filter 0.3s;
         }
-        .b:hover {
+      .r {
+            color: rgb(255, 245, 240); /* Define a cor do texto como branco */
+        }
+        .message:hover {
             filter: blur(4px); /* Define a ofuscação das mensagens */
         }
-        .r {
-            color: rgb(255, 245, 240); /* Define a cor do texto como branco */
+        .message img {
+            width: 40px;
+            height: 40px;
+        }
+        .message .content {
+            margin-left: 8px;
+        }
+        .message .content .name {
+            font-weight: bold;
+          font-size: 17px;
+        }
+        .message .content .text {
+            color: rgb(76, 79, 80);
+            font-size: 14px;
+        }
+        .message .time {
+            color: rgb(76, 79, 80);
         }
     </style>
 </head>
@@ -43,34 +64,141 @@
             <div class="d-flex" style="border-bottom: 3px solid rgb(255, 255, 255);">
                 <i class="fa fa-users mx-2" aria-hidden="true"></i> <strong>Chats</strong>  <div class="ml-2 font-weight-bold bg-light mt-1" style="color: rgb(0, 128, 105); border-radius: 50%; width: 13px; height: 13px; display: flex; align-items: center; justify-content: center;"><span style="font-size: 8px;">9</span></div>  </div>
             <div class="d-flex" style="font-size: 11px;"><strong>Status</strong> </div>
-            <div class="d-flex" style="font-size: 11px;"><strong>Chamadas</strong> <div class="ml-2 font-weight-bold bg-light mt-1" style="color: rgb(0, 128, 105); border-radius: 50%; width: 13px; height: 13px; display: flex; align-items: center; justify-content: center;"><span style="font-size: 8px;">1</span></div></div>
+            <div class="d-flex" style="font-size: 11px;"><strong>Chamadas</strong> <div class="ml-2 font-weight-bold bg-light mt-1" style="color: rgb(0, 128, 105); border-radius: 50%; width: 13px; height: 13px; display: flex; align-items: center; justify-content: center;"><span style="font-size: 8px;">3</span></div></div>
         </div>
     </div>
       <!-- mensagens abaixo -->
 
   
-    <div class="r container bg-light text-dark text-left" style="height: 400px; overflow-y: auto; animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 0ms; animation-iteration-count: 1; opacity: 1; animation-name: r-851776108488582-2;">
-        <div class="d-flex justify-content-between my-2 b">
+    <div class="r container bg-light text-dark text-left" style="height: 450px; overflow-y: auto; animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 0ms; animation-iteration-count: 1; opacity: 1; animation-name: r-851776108488582-2;">
+        <div class="message">
             <div class="d-flex">
-                <img src="https://cat-watch-app.com/static/media/11816320_10206667712507431_1315813589071553428_o.2cf5265f5ea035854b6d.jpg" class="rounded-circle" style="width: 40px; height: 40px;">
-                <div>
-                    <div class="mx-2 fw-bold">Vega</div>
-                    <div class="mx-2" style="color: rgb(76, 79, 80);"><span class="text-primary" style="font-size: 10px;"><i class="fa fa-check" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i></span> Que bueno como te fu...&#10084;&#65039;&#65039;
-</div>
+                <img src="https://cat-watch-app.com/static/media/11816320_10206667712507431_1315813589071553428_o.2cf5265f5ea035854b6d.jpg" class="rounded-circle">
+                <div class="content">
+                    <div class="name">Vega</div>
+                    <div class="text">
+                        <span class="text-primary">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </span>
+                        Que bueno como te fu...❤️️
+                    </div>
                 </div>
             </div>
-            <div class="small">
-                <div style="color: rgb(76, 79, 80);">
-                    <div>11:08</div>
+<div class="small "><div style="color: rgb(3, 213, 98);"><div>00:47</div></div><div class="d-flex justify-content-center mt-1"><div class=" ml-2 font-weight-bold" style="color: rgb(255, 255, 255); background-color: rgb(3, 213, 98); border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;">6</div></div></div>        </div>
+        <div class="message">
+            <div class="d-flex">
+                <img src="/static/media/20220924_133553.4e6b4f9165bcb59c5e5e.jpg" class="rounded-circle">
+                <div class="content">
+                    <div class="name">Rodríguez</div>
+                    <div class="text">
+                        <span class="text-secondary">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </span>
+                        Me hubieras marcado ...
+                    </div>
                 </div>
             </div>
+            <div class="time">20:00</div>
         </div>
-      
-        <!-- Repita o bloco acima para cada item na lista, adaptando os dados conforme necessário -->
+      <div class="message">
+            <div class="d-flex">
+                <img src="/static/media/20220924_133553.4e6b4f9165bcb59c5e5e.jpg" class="rounded-circle">
+                <div class="content">
+                    <div class="name">Rodríguez</div>
+                    <div class="text">
+                        <span class="text-secondary">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </span>
+                        Me hubieras marcado ...
+                    </div>
+                </div>
+            </div>
+            <div class="time">20:00</div>
+        </div>
+      <div class="message">
+            <div class="d-flex">
+                <img src="/static/media/20220924_133553.4e6b4f9165bcb59c5e5e.jpg" class="rounded-circle">
+                <div class="content">
+                    <div class="name">Rodríguez</div>
+                    <div class="text">
+                        <span class="text-secondary">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </span>
+                        Me hubieras marcado ...
+                    </div>
+                </div>
+            </div>
+<div class="small "><div style="color: rgb(3, 213, 98);"><div>00:47</div></div><div class="d-flex justify-content-center mt-1"><div class=" ml-2 font-weight-bold" style="color: rgb(255, 255, 255); background-color: rgb(3, 213, 98); border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;">6</div></div></div>        </div>
+      <div class="message">
+            <div class="d-flex">
+                <img src="/static/media/20220924_133553.4e6b4f9165bcb59c5e5e.jpg" class="rounded-circle">
+                <div class="content">
+                    <div class="name">Rodríguez</div>
+                    <div class="text">
+                        <span class="text-secondary">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </span>
+                        Me hubieras marcado ...
+                    </div>
+                </div>
+            </div>
+            <div class="time">20:00</div>
+        </div>
+        <div class="message">
+            <div class="d-flex">
+                <img src="/static/media/dssds22.857413f8245680d4b914.jpg" class="rounded-circle">
+                <div class="content">
+                    <div class="name">LICHA</div>
+                    <div class="text">🎥 Video (0:05)...</div>
+                </div>
+            </div>
+            <div class="time">00:47</div>
+        </div>
+        <div class="message">
+            <div class="d-flex">
+                <img src="/static/media/sdasasadsa.79af655060dbb9f05285.jpg" class="rounded-circle">
+                <div class="content">
+                    <div class="name">Diego</div>
+                    <div class="text">
+                        <span class="text-primary">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </span>
+                        oi tudo bem?...
+                    </div>
+                </div>
+            </div>
+            <div class="time">21:42</div>
+        </div>
+        <div class="message">
+            <div class="d-flex">
+                <img src="/static/media/sads1d1d1.e28ba7b94950589bce80.jpg" class="rounded-circle">
+                <div class="content">
+                    <div class="name">Rubio Díaz</div>
+                    <div class="text">
+                        <span class="text-primary">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </span>
+                        🎥 Video (0:18)...
+                    </div>
+                </div>
+            </div>
+            <div class="time">21:51</div>
+        </div>
     </div>
+          <!-- Repita o bloco acima para cada item na lista, adaptando os dados conforme necessário -->
+
+  
+</div>
+
 
     <!-- Adicione links para os arquivos JavaScript do Bootstrap e jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 </body>
 </html>
